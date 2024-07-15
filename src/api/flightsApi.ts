@@ -64,10 +64,19 @@ export const fetchFlights = async (
                             b.outboundFlight.totalOutboundTime.hours * 60 +
                             b.outboundFlight.totalOutboundTime.minutes;
 
-                        const scoreA = a.totalPrice + totalTimeA;
-                        const scoreB = b.totalPrice + totalTimeB;
+                        if (totalTimeA !== totalTimeB) {
+                            return totalTimeA - totalTimeB;
+                        }
 
-                        return scoreA - scoreB;
+                        const stopsA =
+                            a.outboundFlight.outboundStopsAirports.length;
+                        const stopsB =
+                            b.outboundFlight.outboundStopsAirports.length;
+                        if (stopsA !== stopsB) {
+                            return stopsA - stopsB;
+                        }
+
+                        return a.totalPrice - b.totalPrice;
                     });
                     break;
             }
