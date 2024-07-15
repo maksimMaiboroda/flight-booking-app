@@ -1,0 +1,45 @@
+@import '@styles/variables';
+
+.flight {
+    display: flex;
+    flex-direction: column;
+    background-color: $white-background;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 8px 0 #0000001A;
+
+    .flight-detail-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .airport-logo {
+            width: 130px;
+
+            @media (width <= 768px) {
+                width: 108px;
+            }
+        }
+
+        .flight-total-price {
+            color: $blue-font;
+            font-size: 24px;
+            font-weight: 600;
+            padding-top: 14px;
+
+            @media (width <= 768px) {
+                font-size: 16px;
+            }
+        }
+
+
+        .detail-item{
+            width: 33%;
+        }
+    }
+
+    @media (width <= 768px) {
+        padding: 12px;
+    }
+}

@@ -1,0 +1,19 @@
+@import '@styles/variables';
+
+.show-more {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: $blue-background;
+    color: $white-font;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    outline: none;
+}

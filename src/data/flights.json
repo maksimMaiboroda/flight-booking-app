@@ -1,0 +1,316 @@
+[
+    {
+        "id": "3ee1d6d5-ce73-4da5-bf1b-340fc7365ddd",
+        "totalPrice": 13300,
+        "outboundFlight": {
+            "departureAirport": "LHR",
+            "arrivalAirport": "DXB",
+            "departureTime": "2024-07-15T10:45:00Z",
+            "arrivalTime": "2024-07-16T08:00:00Z",
+            "totalOutboundTime": {
+                "hours": 34,
+                "minutes": 15
+            },
+            "outboundStopsAirports": [
+                "HKG"
+            ]
+        },
+        "returnFlight": {
+            "departureAirport": "DXB",
+            "arrivalAirport": "LHR",
+            "departureTime": "2024-07-15T11:20:00Z",
+            "arrivalTime": "2024-07-16T00:50:00Z",
+            "totalReturnTime": {
+                "hours": 34,
+                "minutes": 15
+            },
+            "returnStopsAirports": [
+                "HKG"
+            ]
+        },
+        "logo": "@assets/images/a4e_logo.png"
+    },
+    {
+        "id": "1755cc53-810b-4c00-9383-a4f8aec3b22b",
+        "totalPrice": 15100,
+        "outboundFlight": {
+            "departureAirport": "LHR",
+            "arrivalAirport": "DXB",
+            "departureTime": "2024-07-15T10:45:00Z",
+            "arrivalTime": "2024-07-16T08:00:00Z",
+            "totalOutboundTime": {
+                "hours": 17,
+                "minutes": 15
+            },
+            "outboundStopsAirports": [
+                "HKG",
+                "JNB"
+            ]
+        },
+        "returnFlight": {
+            "departureAirport": "DXB",
+            "arrivalAirport": "LHR",
+            "departureTime": "2024-07-15T11:20:00Z",
+            "arrivalTime": "2024-07-16T00:50:00Z",
+            "totalReturnTime": {
+                "hours": 40,
+                "minutes": 30
+            },
+            "returnStopsAirports": [
+                "HKG",
+                "JNB"
+            ]
+        },
+        "logo": "@assets/images/a4e_logo.png"
+    },
+    {
+        "id": "94af2fc6-bfd9-486b-b3c6-98505bb17480",
+        "totalPrice": 13300,
+        "outboundFlight": {
+            "departureAirport": "LHR",
+            "arrivalAirport": "DXB",
+            "departureTime": "2024-07-15T10:45:00Z",
+            "arrivalTime": "2024-07-16T08:00:00Z",
+            "totalOutboundTime": {
+                "hours": 20,
+                "minutes": 15
+            },
+            "outboundStopsAirports": [
+                "HKG"
+            ]
+        },
+        "returnFlight": {
+            "departureAirport": "DXB",
+            "arrivalAirport": "LHR",
+            "departureTime": "2024-07-15T11:20:00Z",
+            "arrivalTime": "2024-07-16T00:50:00Z",
+            "totalReturnTime": {
+                "hours": 13,
+                "minutes": 30
+            },
+            "returnStopsAirports": [
+                "HKG"
+            ]
+        },
+        "logo": "@assets/images/a4e_logo.png"
+    },
+    {
+        "id": "8897a3ae-1d62-401f-bba3-a167504fcb53",
+        "totalPrice": 13300,
+        "outboundFlight": {
+            "departureAirport": "LHR",
+            "arrivalAirport": "DXB",
+            "departureTime": "2024-07-15T10:45:00Z",
+            "arrivalTime": "2024-07-16T08:00:00Z",
+            "totalOutboundTime": {
+                "hours": 21,
+                "minutes": 15
+            },
+            "outboundStopsAirports": [
+                "HKG",
+                "JNB",
+                "JNB"
+            ]
+        },
+        "returnFlight": {
+            "departureAirport": "DXB",
+            "arrivalAirport": "LHR",
+            "departureTime": "2024-07-15T11:20:00Z",
+            "arrivalTime": "2024-07-16T00:50:00Z",
+            "totalReturnTime": {
+                "hours": 12,
+                "minutes": 30
+            },
+            "returnStopsAirports": [
+                "HKG",
+                "JNB",
+                "JNB"
+            ]
+        },
+        "logo": "@assets/images/a4e_logo.png"
+    },
+    {
+        "id": "379045bd-9bbe-4611-855d-268079d21e3f",
+        "totalPrice": 13300,
+        "outboundFlight": {
+            "departureAirport": "LHR",
+            "arrivalAirport": "DXB",
+            "departureTime": "2024-07-15T10:45:00Z",
+            "arrivalTime": "2024-07-16T08:00:00Z",
+            "totalOutboundTime": {
+                "hours": 11,
+                "minutes": 15
+            },
+            "outboundStopsAirports": []
+        },
+        "returnFlight": {
+            "departureAirport": "DXB",
+            "arrivalAirport": "LHR",
+            "departureTime": "2024-07-15T11:20:00Z",
+            "arrivalTime": "2024-07-16T00:50:00Z",
+            "totalReturnTime": {
+                "hours": 9,
+                "minutes": 30
+            },
+            "returnStopsAirports": []
+        },
+        "logo": "@assets/images/a4e_logo.png"
+    },
+    {
+        "id": "3ee1d6d5-ce71-4da5-bf1b-340fc7365ddd",
+        "totalPrice": 13300,
+        "outboundFlight": {
+            "departureAirport": "LHR",
+            "arrivalAirport": "DXB",
+            "departureTime": "2024-07-15T10:45:00Z",
+            "arrivalTime": "2024-07-16T08:00:00Z",
+            "totalOutboundTime": {
+                "hours": 34,
+                "minutes": 15
+            },
+            "outboundStopsAirports": [
+                "HKG"
+            ]
+        },
+        "returnFlight": {
+            "departureAirport": "DXB",
+            "arrivalAirport": "LHR",
+            "departureTime": "2024-07-15T11:20:00Z",
+            "arrivalTime": "2024-07-16T00:50:00Z",
+            "totalReturnTime": {
+                "hours": 34,
+                "minutes": 15
+            },
+            "returnStopsAirports": [
+                "HKG"
+            ]
+        },
+        "logo": "@assets/images/a4e_logo.png"
+    },
+    {
+        "id": "1755cc53-820b-4c00-9383-a4f8aec3b22b",
+        "totalPrice": 15100,
+        "outboundFlight": {
+            "departureAirport": "LHR",
+            "arrivalAirport": "DXB",
+            "departureTime": "2024-07-15T10:45:00Z",
+            "arrivalTime": "2024-07-16T08:00:00Z",
+            "totalOutboundTime": {
+                "hours": 17,
+                "minutes": 15
+            },
+            "outboundStopsAirports": [
+                "HKG",
+                "JNB"
+            ]
+        },
+        "returnFlight": {
+            "departureAirport": "DXB",
+            "arrivalAirport": "LHR",
+            "departureTime": "2024-07-15T11:20:00Z",
+            "arrivalTime": "2024-07-16T00:50:00Z",
+            "totalReturnTime": {
+                "hours": 40,
+                "minutes": 30
+            },
+            "returnStopsAirports": [
+                "HKG",
+                "JNB"
+            ]
+        },
+        "logo": "@assets/images/a4e_logo.png"
+    },
+    {
+        "id": "94af2fc6-bfd9-556b-b3c6-98505bb17480",
+        "totalPrice": 13300,
+        "outboundFlight": {
+            "departureAirport": "LHR",
+            "arrivalAirport": "DXB",
+            "departureTime": "2024-07-15T10:45:00Z",
+            "arrivalTime": "2024-07-16T08:00:00Z",
+            "totalOutboundTime": {
+                "hours": 20,
+                "minutes": 15
+            },
+            "outboundStopsAirports": [
+                "HKG"
+            ]
+        },
+        "returnFlight": {
+            "departureAirport": "DXB",
+            "arrivalAirport": "LHR",
+            "departureTime": "2024-07-15T11:20:00Z",
+            "arrivalTime": "2024-07-16T00:50:00Z",
+            "totalReturnTime": {
+                "hours": 13,
+                "minutes": 30
+            },
+            "returnStopsAirports": [
+                "HKG"
+            ]
+        },
+        "logo": "@assets/images/a4e_logo.png"
+    },
+    {
+        "id": "8897a3ae-1d62-401f-bba4-a167504fcb53",
+        "totalPrice": 13300,
+        "outboundFlight": {
+            "departureAirport": "LHR",
+            "arrivalAirport": "DXB",
+            "departureTime": "2024-07-15T10:45:00Z",
+            "arrivalTime": "2024-07-16T08:00:00Z",
+            "totalOutboundTime": {
+                "hours": 21,
+                "minutes": 15
+            },
+            "outboundStopsAirports": [
+                "HKG",
+                "JNB",
+                "JNB"
+            ]
+        },
+        "returnFlight": {
+            "departureAirport": "DXB",
+            "arrivalAirport": "LHR",
+            "departureTime": "2024-07-15T11:20:00Z",
+            "arrivalTime": "2024-07-16T00:50:00Z",
+            "totalReturnTime": {
+                "hours": 12,
+                "minutes": 30
+            },
+            "returnStopsAirports": [
+                "HKG",
+                "JNB",
+                "JNB"
+            ]
+        },
+        "logo": "@assets/images/a4e_logo.png"
+    },
+    {
+        "id": "389045bd-9bbe-4617-855d-268079d21e3f",
+        "totalPrice": 13300,
+        "outboundFlight": {
+            "departureAirport": "LHR",
+            "arrivalAirport": "DXB",
+            "departureTime": "2024-07-15T10:45:00Z",
+            "arrivalTime": "2024-07-16T08:00:00Z",
+            "totalOutboundTime": {
+                "hours": 11,
+                "minutes": 15
+            },
+            "outboundStopsAirports": []
+        },
+        "returnFlight": {
+            "departureAirport": "DXB",
+            "arrivalAirport": "LHR",
+            "departureTime": "2024-07-15T11:20:00Z",
+            "arrivalTime": "2024-07-16T00:50:00Z",
+            "totalReturnTime": {
+                "hours": 9,
+                "minutes": 30
+            },
+            "returnStopsAirports": []
+        },
+        "logo": "@assets/images/a4e_logo.png"
+    }
+]

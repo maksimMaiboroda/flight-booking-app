@@ -1,0 +1,83 @@
+@import '@styles/variables';
+
+.filter {
+    width: 232px;
+    border-radius: 5px;
+    background-color: $white-background;
+    box-shadow: 0 2px 8px 0 #0000001A;
+    position: relative;
+    height: max-content;
+
+    .filter-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+
+        .close-button {
+            display: none;
+            background: none;
+            border: none;
+            position: absolute;
+            top: -20px;
+            right: 0;
+        }
+
+        
+        &.open {
+            display: block;
+        }
+        
+        h2 {
+            color: $black-font;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            padding: 14px 20px 18px;
+
+            @media (width <= 768px) {
+                padding-top: 20px;
+            }
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            
+            .checkbox-item {
+                :hover {
+                    background-color: $hover-background;
+                }
+                
+                &:last-child {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        @media (width <= 768px) {
+            .close-button {
+                display: block;
+            }
+        }
+
+
+        @media (width <= 768px) {
+            width: 100%;
+        }
+    }
+
+    @media (width <= 768px) {
+        .filter-content {
+            display: none;
+            position: fixed;
+            width: 88%;
+            top: 10px;
+            background: $white-background;
+            box-shadow: 0 2px 8px 0 #0000001A;
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1000;
+        }
+    }
+}

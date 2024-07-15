@@ -1,0 +1,53 @@
+@import '@styles/variables';
+
+.custom-checkbox {
+    padding: 10px 20px;
+
+    input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+    }
+
+    label {
+        position: relative;
+        cursor: pointer;
+        color: $gray-font;
+    }
+
+    label::before {
+        content:'';
+        appearance: none;
+        background-color: transparent;
+        border: 1px solid $check-box-border-color;
+        border-radius: 2px;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 5%), inset 0 -15px 10px -12px rgb(0 0 0 / 5%);
+        padding: 10px;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+    input:checked + label::before {
+       border: 1px solid $blue;
+    }
+
+    input:checked + label::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 7px;
+        width: 6px;
+        height: 11px;
+        border: 1px solid $blue;
+        border-radius: 2px;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+}

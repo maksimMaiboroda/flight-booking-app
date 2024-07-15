@@ -1,0 +1,18 @@
+@import '@components/App/App';
+@import '@components/Filter/Filter';
+@import '@components/Tabs/Tabs';
+@import '@components/Flight/Flight';
+@import '@components/ShowMoreButton/ShowMoreButton';
+@import 'variables';
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: $app-background;
+    font-size: 13px;
+    line-height: 20px;
+
+    * {
+        font-family: "Open Sans", sans-serif;
+    }
+}
