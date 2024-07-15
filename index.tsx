@@ -1,10 +1,11 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from './src/store/store';
-import App from './src/components/App/App';
+import store from '@store/store';
+import AppRoutes from '@routes/routes';
 
-import './src/styles/main.scss';
+import '@styles/main.scss';
 import 'normalize.css';
 
 const container = document.getElementById('root');
@@ -13,7 +14,9 @@ if (container) {
     const root = createRoot(container);
     root.render(
         <Provider store={store}>
-            <App />
+            <Router>
+                <AppRoutes />
+            </Router>
         </Provider>
     );
 } else {

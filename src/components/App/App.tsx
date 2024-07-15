@@ -1,4 +1,5 @@
 import React, { useState, CSSProperties } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '@assets/images/svg/logo.svg';
 import MenuIcon from '@assets/images/svg/menu_icon.svg';
 import Filter from '@components/Filter/Filter';
@@ -29,7 +30,9 @@ const App: React.FC = () => {
                 style={{ display: menuOpen ? 'block' : 'none' }}
                 onClick={() => setMenuOpen(false)}
             ></div>
-            <Logo />
+            <Link to="/" className="logo">
+                <Logo />
+            </Link>
             <div className="content">
                 <Filter
                     menuOpen={menuOpen}

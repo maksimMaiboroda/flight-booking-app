@@ -26,6 +26,10 @@
         z-index: 999;
     }
 
+    .logo {
+        cursor: pointer;
+    }
+
     @media (width <= 768px) {
         margin: 0;
     }
