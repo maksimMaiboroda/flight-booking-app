@@ -1,6 +1,6 @@
 import React, { useState, CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '@assets/images/svg/logo.svg';
+import Logo from '@assets/images/logo.png';
 import MenuIcon from '@assets/images/svg/menu_icon.svg';
 import Filter from '@components/Filter/Filter';
 import Tabs from '@components/Tabs/Tabs';
@@ -30,8 +30,10 @@ const App: React.FC = () => {
                 style={{ display: menuOpen ? 'block' : 'none' }}
                 onClick={() => setMenuOpen(false)}
             ></div>
-            <Link to="/" className="logo">
-                <Logo />
+            <Link to="/" className="logo-wrapper">
+                <div className="logo">
+                    <img src={Logo} alt="App logo" loading="lazy" />
+                </div>
             </Link>
             <div className="content">
                 <Filter
