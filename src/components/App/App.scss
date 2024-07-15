@@ -39,7 +39,7 @@
         height: 80px;
         border-radius: 50%;
         overflow: hidden; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        box-shadow: 0 4px 8px rgb(0 0 0 / 20%); 
 
         img {
             width: 110px;
@@ -50,7 +50,7 @@
     }
 
     .logo:hover {
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 8px 16px rgb(0 0 0 / 50%);
     }
 
     @media (width <= 768px) {
