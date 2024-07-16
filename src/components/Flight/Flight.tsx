@@ -16,13 +16,13 @@ const Flight: React.FC<FlightProps> = ({ flight }) => {
     const flightPrice = `${flight.totalPrice} $`;
     const outboundTime = `${dayjs(flight.outboundFlight.departureTime).format('HH:mm')} - ${dayjs(flight.outboundFlight.arrivalTime).format('HH:mm')}`;
     const outboundAirport = `${flight.outboundFlight.departureAirport} - ${flight.outboundFlight.arrivalAirport}`;
-    const totalOutboundTime = `${flight.outboundFlight.totalOutboundTime.hours}г ${flight.outboundFlight.totalOutboundTime.minutes}хв`;
+    const totalOutboundTime = `${flight.outboundFlight.totalOutboundTime.hours}${t('tickets.hours')} ${flight.outboundFlight.totalOutboundTime.minutes}${t('tickets.minutes')}`;
     const outboundStopsAirports =
         flight.outboundFlight.outboundStopsAirports.join(', ');
 
     const returnTime = `${dayjs(flight.returnFlight.departureTime).format('HH:mm')} - ${dayjs(flight.returnFlight.arrivalTime).format('HH:mm')}`;
     const returnAirport = `${flight.returnFlight.departureAirport} - ${flight.returnFlight.arrivalAirport}`;
-    const totalReturnTime = `${flight.returnFlight.totalReturnTime.hours}г ${flight.returnFlight.totalReturnTime.minutes}хв`;
+    const totalReturnTime = `${flight.returnFlight.totalReturnTime.hours}${t('tickets.hours')} ${flight.returnFlight.totalReturnTime.minutes}${t('tickets.minutes')}`;
     const returnStopsAirports =
         flight.returnFlight.returnStopsAirports.join(', ');
 

@@ -17,7 +17,9 @@
         "loadMoreBtn": "Показати ще 5 квитків",
         "noTransfers": "Без пересадок",
         "oneTransfer": "1 пересадка",
-        "multipleTransfers": "{{count}} пересадок"
+        "multipleTransfers": "{{count}} пересадок",
+        "hours": "г",
+        "minutes": "хв"
     },
     "preloader": {
         "loading": "Завантаження..."

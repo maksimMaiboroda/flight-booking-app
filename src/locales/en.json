@@ -17,7 +17,9 @@
         "loadMoreBtn": "Show 5 More Tickets",
         "noTransfers": "No Transfers",
         "oneTransfer": "1 Transfer",
-        "multipleTransfers": "{{count}} Transfers"
+        "multipleTransfers": "{{count}} Transfers",
+        "hours": "h",
+        "minutes": "min"
     },
     "preloader": {
         "loading": "Loading..."
