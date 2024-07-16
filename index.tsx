@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '@store/store';
 import AppRoutes from '@routes/routes';
@@ -14,9 +14,9 @@ if (container) {
     const root = createRoot(container);
     root.render(
         <Provider store={store}>
-            <Router>
+            <HashRouter>
                 <AppRoutes />
-            </Router>
+            </HashRouter>
         </Provider>
     );
 } else {
