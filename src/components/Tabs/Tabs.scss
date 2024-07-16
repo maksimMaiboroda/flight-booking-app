@@ -8,6 +8,7 @@
     background-color: $white-background;
 
     .tab {
+        min-width: 174px;
         padding: 15px 34px;
         background-color: $white-background;
         border: 1px solid $border-color;
@@ -41,6 +42,7 @@
         }
 
         @media (width <= 768px) {
+            min-width: 121px;
             padding: 10px 20px;
             font-size: 9px;
         }

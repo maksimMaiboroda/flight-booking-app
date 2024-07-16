@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 import dayjs from 'dayjs';
 import AirportLogo from '@assets/images/a4e_logo.png';
@@ -11,24 +12,36 @@ interface FlightProps {
 }
 
 const Flight: React.FC<FlightProps> = ({ flight }) => {
+    const { t } = useTranslation();
     const flightPrice = `${flight.totalPrice} $`;
     const outboundTime = `${dayjs(flight.outboundFlight.departureTime).format('HH:mm')} - ${dayjs(flight.outboundFlight.arrivalTime).format('HH:mm')}`;
     const outboundAirport = `${flight.outboundFlight.departureAirport} - ${flight.outboundFlight.arrivalAirport}`;
     const totalOutboundTime = `${flight.outboundFlight.totalOutboundTime.hours}г ${flight.outboundFlight.totalOutboundTime.minutes}хв`;
-    const outboundStops = !flight.outboundFlight.outboundStopsAirports.length
-        ? 'Без пересадок'
-        : `${flight.outboundFlight.outboundStopsAirports.length} пересадка`;
     const outboundStopsAirports =
         flight.outboundFlight.outboundStopsAirports.join(', ');
 
     const returnTime = `${dayjs(flight.returnFlight.departureTime).format('HH:mm')} - ${dayjs(flight.returnFlight.arrivalTime).format('HH:mm')}`;
     const returnAirport = `${flight.returnFlight.departureAirport} - ${flight.returnFlight.arrivalAirport}`;
     const totalReturnTime = `${flight.returnFlight.totalReturnTime.hours}г ${flight.returnFlight.totalReturnTime.minutes}хв`;
-    const returnStops = !flight.returnFlight.returnStopsAirports.length
-        ? 'Без пересадок'
-        : `${flight.returnFlight.returnStopsAirports.length} пересадка`;
     const returnStopsAirports =
         flight.returnFlight.returnStopsAirports.join(', ');
+
+    const getStopDescription = (stops: string[]) => {
+        if (stops.length === 0) {
+            return t('tickets.noTransfers');
+        } else if (stops.length === 1) {
+            return t('tickets.oneTransfer');
+        } else {
+            return t('tickets.multipleTransfers', { count: stops.length });
+        }
+    };
+
+    const outboundStops = getStopDescription(
+        flight.outboundFlight.outboundStopsAirports
+    );
+    const returnStops = getStopDescription(
+        flight.returnFlight.returnStopsAirports
+    );
 
     return (
         <div className="flight">
@@ -54,7 +67,7 @@ const Flight: React.FC<FlightProps> = ({ flight }) => {
                 <DetailField
                     className="detail-item"
                     info={String(totalOutboundTime)}
-                    description="В дорозі"
+                    description={t('tickets.totalTimeTitle')}
                 />
                 <DetailField
                     className="detail-item"
@@ -71,7 +84,7 @@ const Flight: React.FC<FlightProps> = ({ flight }) => {
                 <DetailField
                     className="detail-item"
                     info={String(totalReturnTime)}
-                    description="В дорозі"
+                    description={t('tickets.totalTimeTitle')}
                 />
                 <DetailField
                     className="detail-item"

@@ -1,4 +1,5 @@
 import React, { CSSProperties } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import CloseIcon from '@assets/images/svg/close_icon.svg';
@@ -14,11 +15,11 @@ const menuIconStyles: CSSProperties = {
 };
 
 const FILTERS = [
-    { id: uuidv4(), name: 'all', label: 'Всі' },
-    { id: uuidv4(), name: 'noTransfers', label: 'Без пересадок' },
-    { id: uuidv4(), name: 'oneTransfer', label: '1 пересадка' },
-    { id: uuidv4(), name: 'twoTransfers', label: '2 пересадки' },
-    { id: uuidv4(), name: 'threeTransfers', label: '3 пересадки' }
+    { id: uuidv4(), name: 'all' },
+    { id: uuidv4(), name: 'noTransfers' },
+    { id: uuidv4(), name: 'oneTransfer' },
+    { id: uuidv4(), name: 'twoTransfers' },
+    { id: uuidv4(), name: 'threeTransfers' }
 ];
 
 interface FilterProps {
@@ -27,6 +28,7 @@ interface FilterProps {
 }
 
 const Filter: React.FC<FilterProps> = ({ menuOpen, onClose }) => {
+    const { t } = useTranslation();
     const dispatch = useDispatch<AppDispatch>();
     const filter = useSelector((state: RootState) => state.flights.filter);
 
@@ -44,14 +46,14 @@ const Filter: React.FC<FilterProps> = ({ menuOpen, onClose }) => {
                         <CloseIcon style={menuIconStyles} />
                     </button>
                 ) : null}
-                <h2>Кількість пересадок</h2>
+                <h2>{t('filters.title')}</h2>
                 <div className="checkbox-group">
                     {FILTERS.map(item => (
                         <div key={item.id} className="checkbox-item">
                             <Checkbox
                                 value={item.name}
                                 checked={filter === item.name}
-                                label={item.label}
+                                label={t(`filters.${item.name}`)}
                                 onChange={handleChange}
                             />
                         </div>

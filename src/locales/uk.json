@@ -1,0 +1,25 @@
+{
+    "filters": {
+        "title": "Кількість пересадок",
+        "all": "Всі",
+        "noTransfers": "Без пересадок",
+        "oneTransfer": "1 пересадка",
+        "twoTransfers": "2 пересадки",
+        "threeTransfers": "3 пересадки"
+    },
+    "sorting": {
+        "cheap": "Найдешевший",
+        "fast": "Найшвидший",
+        "optimal": "Оптимальний"
+    },
+    "tickets": {
+        "totalTimeTitle": "В дорозі",
+        "loadMoreBtn": "Показати ще 5 квитків",
+        "noTransfers": "Без пересадок",
+        "oneTransfer": "1 пересадка",
+        "multipleTransfers": "{{count}} пересадок"
+    },
+    "preloader": {
+        "loading": "Завантаження..."
+    }
+}

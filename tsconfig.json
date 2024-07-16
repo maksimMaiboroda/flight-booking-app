@@ -25,6 +25,9 @@
             ],
             "@routes/*": [
                 "routes/*"
+            ],
+            "@plugins/*": [
+                "plugins/*"
             ]
         },
         "target": "es5",

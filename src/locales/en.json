@@ -1,0 +1,25 @@
+{
+    "filters": {
+        "title": "Number of Transfers",
+        "all": "All",
+        "noTransfers": "No Transfers",
+        "oneTransfer": "1 Transfer",
+        "twoTransfers": "2 Transfers",
+        "threeTransfers": "3 Transfers"
+    },
+    "sorting": {
+        "cheap": "Cheapest",
+        "fast": "Fastest",
+        "optimal": "Optimal"
+    },
+    "tickets": {
+        "totalTimeTitle": "Total Time",
+        "loadMoreBtn": "Show 5 More Tickets",
+        "noTransfers": "No Transfers",
+        "oneTransfer": "1 Transfer",
+        "multipleTransfers": "{{count}} Transfers"
+    },
+    "preloader": {
+        "loading": "Loading..."
+    }
+}

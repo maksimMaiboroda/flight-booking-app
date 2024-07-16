@@ -7,6 +7,7 @@ import AppRoutes from '@routes/routes';
 
 import '@styles/main.scss';
 import 'normalize.css';
+import '@plugins/i18n';
 
 const container = document.getElementById('root');
 

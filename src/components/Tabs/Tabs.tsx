@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { RootState, AppDispatch } from '@store/store';
@@ -7,12 +8,13 @@ import { SortType } from 'types/flightsTypes';
 import './Tabs.scss';
 
 const TABS = [
-    { id: uuidv4(), name: 'cheap', label: 'Найдешевший' },
-    { id: uuidv4(), name: 'fast', label: 'Найшвидший' },
-    { id: uuidv4(), name: 'optimal', label: 'Оптимальний' }
+    { id: uuidv4(), name: 'cheap' },
+    { id: uuidv4(), name: 'fast' },
+    { id: uuidv4(), name: 'optimal' }
 ];
 
 const Tabs: React.FC = () => {
+    const { t } = useTranslation();
     const dispatch = useDispatch<AppDispatch>();
     const sort = useSelector((state: RootState) => state.flights.sort);
 
@@ -29,7 +31,7 @@ const Tabs: React.FC = () => {
                     className={`tab ${sort === tab.name ? 'active' : ''}`}
                     onClick={() => handleSort(tab.name as SortType)}
                 >
-                    {tab.label}
+                    {t(`sorting.${tab.name}`)}
                 </button>
             ))}
         </div>
